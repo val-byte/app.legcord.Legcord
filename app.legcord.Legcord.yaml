@@ -11,6 +11,8 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: *runtime-version
 
+command: startlegcord
+separate-locales: false
 
 finish-args:
     - --socket=pulseaudio
@@ -73,7 +75,9 @@ modules:
 
       sources:
           # - generated-sources.json
-          
+          - type: file
+            path: startlegcord
+        
           - type: file
             path: app.legcord.Legcord.desktop
 
