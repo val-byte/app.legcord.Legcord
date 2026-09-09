@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Legcord
-Exec=startlegcord %U
+Exec=/usr/bin/flatpak run app.legcord.Legcord %U
 Terminal=false
 Type=Application
 Icon=app.legcord.Legcord
