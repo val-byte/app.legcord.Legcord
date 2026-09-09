@@ -70,6 +70,7 @@ modules:
                       /app/share/icons/hicolor/${icon}x${icon}/apps/app.legcord.Legcord.png
               done
           - install -D app.legcord.Legcord.desktop /app/share/applications/app.legcord.Legcord.desktop
+          - install -Dm755 startlegcord /app/bin/startlegcord
           - install -D app.legcord.Legcord.metainfo.xml -t /app/share/metainfo/
           - mv squashfs-root /app/bin/legcord
 
